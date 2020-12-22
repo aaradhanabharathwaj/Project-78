@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Project 78</title>
+    </head>
+    <body>
+        <h1>My Family</h1>
+        <img src="family.gif">
+        <br><br><button type="button" onclick="nextslide()">Move
+        </button>
+        <script>
+            var images=["child.jpg","dad.jpg","family.gif","mom.png"];
+            console.log(images);
+            document.getElementById("declaration_of_arrays").innerHTML=images;
+            var names=["Dad","Mom","Baby"];
+            console.log(names);
+            document.getElementById("declaration_of_arrays").innerHTML=names;    
+            var image=[
+                "family.gif",
+                "dad.jpg",
+                "mom.png",
+                "child.jpg"
+            ];      
+            var i=0;
+function nextslide(){
+   document.getElementById("images").src=image[i];
+  i++;
+}                 
+            </script>
+        </body>
+</html>
