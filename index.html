@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Project 78</title>
+    </head>
+    <body>
+        <h1>My Family</h1>        
+        <img id="images" src="family.gif">
+        <h2 id="family_names"></h2>
+        <br><br><button type="button" onclick="nextslide()">Move
+        </button>
+        <script>           
+                var names=["Dad","Mom","Baby"];            
+            
+            var image=[             
+                "dad.jpg",
+                "mom.png",
+                "child.jpg"
+            ];      
+            var i=0;
+function nextslide(){
+    document.getElementById("family_names").innerHTML=names[i];
+   document.getElementById("images").src=image[i];
+  i++;
+  
+}                 
+            </script>
+        </body>
+</html>
